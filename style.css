@@ -1,0 +1,96 @@
+body{
+    /* background: linear-gradient(90deg, hsla(141, 54%, 86%, 1) 0%, hsla(333, 73%, 85%, 1) 50%, hsla(211, 58%, 79%, 1) 100%); */
+    background-image: url('./assets/bodyBackground.png');
+}
+h3 {
+    text-align: center;
+    font-size: 45px;   
+    margin: 20px;
+    padding: 10px;
+    background-image: url('./assets/background.jpg');
+    background-position-x:right;
+    background-position-y:bottom;
+    background-repeat: no-repeat;
+    background-clip: text;
+    color: transparent;
+}
+hr {
+    border-width: 2px;
+    border-style:solid;
+    width: 75%;
+}
+#main-div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    justify-content: center;
+}
+.color {
+    position: relative;
+    width: 250px;
+    height: 150px;
+    border: 3px solid black;
+    align-content: center;
+    border-radius: 15px;
+}
+.color p:nth-child(1) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(149, 149, 149);
+    letter-spacing: 2px;
+    transform: translate(-50%,-50%);
+}
+.color p:nth-child(2) {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+    transform: translate(-50%,-50%);
+}
+
+.input-box {
+    padding: 15px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.input {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+}
+input[type=number] {
+    width: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 30px;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+input[type=submit] {
+    height: 35px; 
+    background-color: rgb(123, 0, 255);
+    color: white;
+    font-weight: bold;
+    border: 3px solid black;
+    font-size:medium;
+    border-radius: 15px;
+}
+input[type=submit]:hover{
+    background-color: rgb(145, 64, 233);
+}
