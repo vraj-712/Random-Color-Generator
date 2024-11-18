@@ -35,21 +35,21 @@ function generateColor(n) {
         innerDiv.onclick = () => {
             window.navigator.clipboard.writeText(`#${randomColorString}`);
 
-            let alertDiv = document.createElement("div");
-            alertDiv.className = "alert";
+            let innerAlertDiv = document.createElement("div");
+            innerAlertDiv.className = "alert";
 
             let innerP = document.createElement("p");
             innerP.textContent = "Copied To Clipboard"
 
-            alertDiv.appendChild(innerP)
+            innerAlertDiv.appendChild(innerP)
             alerts.innerHTML = "";
-            alerts.prepend(alertDiv)
+            alerts.prepend(innerAlertDiv)
             
             setTimeout(() => {
                 let alertsDivs = document.querySelectorAll(".alert");
                 alertsDivs.forEach((ele) => {
-                    if (ele == alertDiv) {
-                        body.removeChild(ele)
+                    if (ele == innerAlertDiv) {
+                        alerts.removeChild(ele)
                     }
                 })
             }, 2000);
