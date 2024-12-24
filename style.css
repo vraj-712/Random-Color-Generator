@@ -1,5 +1,6 @@
 body{
     background: linear-gradient(90deg, rgba(131,58,180,0.57999766801251746) 0%, rgba(227,204,118,0.50240663159795167) 50%, rgba(90,241,197,0.55758870442708337) 100%);
+    overflow-x: hidden;
 }
 h3 {
     text-align: center;
